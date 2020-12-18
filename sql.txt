@@ -1,0 +1,27 @@
+CREATE TABLE `admin_table` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `admin_name` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+CREATE TABLE `customer_table` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `customer_name` varchar(100) NOT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `city` varchar(100) DEFAULT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `phone` bigint DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+CREATE TABLE `vendor_table` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `vendor_name` varchar(100) NOT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `city` varchar(100) DEFAULT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `phone` bigint DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
